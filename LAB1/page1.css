@@ -1,0 +1,127 @@
+body {
+    background-color: #f8bfff;
+    color: #333;
+    font-family: 'Geneva', serif;
+}
+
+h1 {
+    color: #360354;
+}
+
+h2 {
+    color: #4126a3;
+}
+
+img {
+    border-radius: 30px;
+    border-style: dotted;
+}
+
+.banner {
+    background-image: url('pinkbolt.jpg');
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+section {
+    text-align: center;
+}
+
+.main {
+    border: 20px palevioletred;
+    width: 85%;
+    position: center;
+    align-items: center;
+    margin: auto;
+    background: #fff; 
+    padding: 20px;
+    box-shadow: 0 10px 10px #ffebf4;
+    background-color: #ffebf4;
+}
+
+.link {
+    width: 40%;
+    margin: auto;
+    color: purple;
+    border: 10px groove;
+    border-end-end-radius: 30%;
+    border-top-left-radius: 30%;
+}
+
+
+@media (max-width: 1024px) {
+    .main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main {
+        width: 100%;
+        padding: 5px; 
+    }
+
+    .banner {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    img {
+        width: 100%;
+    }
+}

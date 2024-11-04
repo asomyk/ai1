@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="lab2_ai_css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <!-- SZUKANIE -->
+        <input type="text" id="search" placeholder="⋅˚₊‧ ୨ WYSZUKAJ 🔎 ୧ ‧₊˚ ⋅" onkeyup="filterTasks()">
+
+        <!-- LISTA -->
+        <ul id="taskList"></ul>
+
+        <!-- NOWE ZADANIE -->
+        <div class="new-task">
+            <input type="text" id="taskInput" placeholder="⋅˚₊‧ ୨ 𝒩𝐸𝒲 𝒯𝒜𝒮𝒦 ୧ ‧₊˚ ⋅">
+            <input type="datetime-local" id="taskDueDate">
+            <button id="addTaskButton">Dodaj Nowego Taska</button>
+        </div>
+    </div>
+
+    <script src="lab2_ai_js.js"></script>
+</body>
+</html>

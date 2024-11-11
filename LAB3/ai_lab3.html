@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="ai_lab3.css">
+
+    <meta charset="UTF-8">
+    <title>Maps with Leaflet</title>
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+
+</head>
+<body>
+<div id="map"></div>
+
+<button id="getLocation">Get Current Location</button>
+<button id="saveButton">Save Raster Map</button>
+<br>
+
+<canvas id="rasterMap"></canvas>
+<div class="puzzleContainer">
+    <div id="table"></div> <!-- Sekcja dla początkowych elementów puzzli -->
+    <div id="puzzleArea"></div> <!-- Sekcja dla układanych elementów puzzli -->
+</div>
+<script src="ai_lab3.js"></script>
+</body>
+</html>

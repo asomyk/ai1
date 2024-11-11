@@ -21,7 +21,7 @@ document.getElementById("getLocation").addEventListener("click", function(event)
 if (Notification.permission === 'default') {
     Notification.requestPermission().then(function(result) {
         if (result === 'granted') {
-            new Notification("Powiadomienia zostały włączone!");
+            new Notification("Powiadomienia wlaczone!");
         }
     });
 }
@@ -32,10 +32,8 @@ saveButton.addEventListener("click", () => {
         const rasterMap = document.getElementById("rasterMap");
         const context = rasterMap.getContext("2d");
         context.drawImage(canvas, 0, 0, 300, 150);
-
         const pieceWidth = canvas.width / 4;
         const pieceHeight = canvas.height / 4;
-
         const piecesArray = [];
         for (let row = 0; row < 4; row++) {
             for (let col = 0; col < 4; col++) {
@@ -53,16 +51,13 @@ saveButton.addEventListener("click", () => {
                 piece.dataset.position = `${col}-${row}`;
                 piece.id = `piece-${col}-${row}`;
                 piece.draggable = true;
-
                 piece.addEventListener("dragstart", handleDragStart);
                 piecesArray.push(piece);
             }
         }
-
         const shuffledPieces = piecesArray.sort(() => Math.random() - 0.5);
         const tableContainer = document.getElementById("table");
         tableContainer.innerHTML = "";
-
         shuffledPieces.forEach((piece) => {
             tableContainer.appendChild(piece);
         });
@@ -83,7 +78,6 @@ puzzleArea.addEventListener("drop", (e) => {
     e.preventDefault();
     const pieceId = e.dataTransfer.getData("text/plain");
     const piece = document.getElementById(pieceId);
-
     const targetPosition = piece.dataset.position;
     const currentDropIndex = Array.from(puzzleArea.children).length;
     const posX = currentDropIndex % 4;
@@ -104,7 +98,6 @@ puzzleArea.addEventListener("drop", (e) => {
 function checkPuzzleCompletion() {
     let correctPieces = document.querySelectorAll('.correct');
     if (correctPieces.length === 16) {
-        // Usuwamy console.log i dodajemy Notification API
         if (Notification.permission === 'granted') {
             new Notification("Gratulacje~! Puzzle ułożone~!!");
         } else if (Notification.permission !== 'denied') {

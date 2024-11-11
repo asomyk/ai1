@@ -1,51 +1,51 @@
-#puzzleArea, #table {
+#puzzleArea, #puzzleTable {
 	display: grid;
 	grid-template-columns: repeat(4, 150px);
 	grid-template-rows: repeat(4, 75px);
 	width: 600px;
 	height: 300px;
-	border: 2px dashed #FFB6C1; /* Pastelowy różowy */
-	background-color: #FFE4E1; /* Jasny róż */
+	border: 2px dashed #FFB6C1;
+	background-color: #FFE4E1;
 	overflow: hidden;
 	box-sizing: border-box;
 	border-radius: 10px;
-	box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3); /* Pastelowy cień */
+	box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
 }
 
-#map, #puzzleArea {
+#mapDisplay, #puzzleArea {
 	width: 600px;
 	height: 300px;
-	border: 2px dashed #FF69B4; /* Intensywny różowy */
+	border: 2px dashed #FF69B4;
 	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
 }
 
-#rasterMap {
+#raster {
 	width: 300px;
 	height: 150px;
-	border: 2px solid #FFCCCB; /* Bardzo jasny róż */
+	border: 2px solid #FFCCCB;
 	border-radius: 8px;
-	background-color: #FFF0F5; /* Pastelowy róż */
+	background-color: #FFF0F5;
 	box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
 }
 
-#table canvas, #puzzleArea canvas {
+#puzzleTable canvas, #puzzleArea canvas {
 	width: 150px;
 	height: 75px;
-	border: 1px solid #FFC0CB; /* Różowy kontur */
+	border: 1px solid #FFC0CB;
 	border-radius: 6px;
-	background-color: #FFF5F7; /* Bardzo jasny róż */
+	background-color: #FFF5F7;
 	box-shadow: 0 2px 5px rgba(255, 182, 193, 0.3);
 }
 
-.puzzleContainer {
+.puzzleWrapper {
 	display: flex;
 	gap: 15px;
 	margin-top: 20px;
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
-	background-color: #FFD1DC; /* Pastelowy róż */
+	background-color: #FFD1DC;
 	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
 }

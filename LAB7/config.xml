@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="pl.edu.zut.wi.sa51100" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Aleksandra 51100</name>
+    <description>Weather App</description>
+    <author email="sa51100@zut.edu.pl" href="https://www.wi.zut.edu.pl">
+        Aleksandra
+    </author>
+    <content src="weather.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    
+    <platform name="electron">e
+    <icon src="res/electron/catlogo.png" />
+    </platform>
+</widget>

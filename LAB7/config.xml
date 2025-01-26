@@ -8,6 +8,7 @@
     <content src="weather.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    
     <platform name="electron">e
     <icon src="res/electron/catlogo.png" />
     </platform>

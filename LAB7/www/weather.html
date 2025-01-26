@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest Weather</title>
+    <link rel="stylesheet" href="css/lab4.css" type="text/css">
+</head>
+<body>
+
+
+<div id="weather-search-params">
+    <h1>Pogodynka</h1>
+    <input type="text" value="Szczecin, Poland" id="locationInput">
+    <button id="checkButton">Check!</button>
+</div>
+
+<div id="current-weather">
+    <h2>Aktualna pogoda</h2>
+    <div class="weather-block">
+        <div class="weather-date">22.11.2020 19:27</div>
+        <div class="weather-temperature">6.68 &deg;C</div>
+        <div class="weather-temperature-feels-like">Feel: 1.43 &deg;C</div>
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/04n@2x.png" alt="Weather Icon">
+        <div class="weather-description">scattered clouds</div>
+    </div>
+</div>
+
+<div id="forecast-weather">
+    <h2>Prognoza pogody</h2>
+    <div id="forecast-container">
+    </div>
+</div>
+
+<script src="js/lab4.js" type="text/javascript"></script>
+
+</body>
+</html>

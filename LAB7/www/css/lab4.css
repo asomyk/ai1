@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("listc.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#weather-search-params {
+    background-color: rgba(34, 34, 34, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #ffddc1;
+}
+
+#locationInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffddc1;
+    width: 70%;
+    margin-right: 5px;
+}
+
+#checkButton {
+    padding: 10px 15px;
+    background-color: #ff8c42;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkButton:hover {
+    background-color: #d96a2d;
+}
+
+#weather-results-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.weather-block {
+    background-color: rgba(50, 50, 50, 0.85);
+    border: 1px solid #ffddc1;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    color: #ffddc1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    text-align: center;
+}
+
+.weather-date {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.weather-temperature {
+    font-size: 36px;
+    color: #ff8c42;
+    font-weight: bold;
+}
+
+.weather-temperature-feels-like,
+.weather-description {
+    font-size: 14px;
+    color: #ffddc1;
+}
+
+.weather-icon {
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#current-weather, #forecast-weather {
+    background-color: rgba(34, 34, 34, 0.85);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #ffddc1;
+    text-align: center;
+}
+
+
+
+
+#forecast-container {
+    margin-top: 20px;
+}
+
+.forecast-day {
+    background-color: rgba(50, 50, 50, 0.85);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.forecast-day h3 {
+    text-align: center;
+    color: #ff8c42;
+}
+
+.weather-block {
+    background-color: rgba(70, 70, 70, 0.9);
+    border: 1px solid #ffddc1;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    color: #ffddc1;
+    max-width: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
